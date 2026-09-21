@@ -66,7 +66,7 @@ if prompt := st.chat_input("Como posso ajudar, Senhor Victor?"):
     # Gera a resposta
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
-           model="qwen/qwen3-4b:free",
+           model="openrouter/free",
             messages=api_messages,
             temperature=temperature,
             max_tokens=max_tokens,
