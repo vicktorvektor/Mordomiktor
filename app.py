@@ -66,7 +66,7 @@ if prompt := st.chat_input("Como posso ajudar, Senhor Victor?"):
     # Gera a resposta
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
-            model="google/gemini-2.0-flash-001", # Modelo gratuito e rápido
+            model="qwen/qwen-2.5-7b-instruct:free",
             messages=api_messages,
             temperature=temperature,
             max_tokens=max_tokens,
